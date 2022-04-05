@@ -34,7 +34,7 @@ public class SensorInput {
 	
 	
 	
-	@Scheduled(fixedRate = 10000)
+	@Scheduled(fixedRate = 1000)
 	public void mockSensor1() {
 		
 	   
@@ -50,7 +50,7 @@ public class SensorInput {
 	    config.sensorDataKafkaTemplate().send("sensor",sensor1);
 	}
 	
-	@Scheduled(fixedRate = 10000)
+	@Scheduled(fixedRate = 1000)
 	public void mockSensor2() {
 		
 	   
@@ -66,7 +66,7 @@ public class SensorInput {
 	    config.sensorDataKafkaTemplate().send("sensor",sensor2);
 	}
 	
-	@Scheduled(fixedRate = 10000)
+	@Scheduled(fixedRate = 1000)
 	public void mockSensor3() {
 		
 	   
